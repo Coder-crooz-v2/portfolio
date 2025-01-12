@@ -16,7 +16,6 @@ const Home: React.FC = () => {
       <Navbar />
       <ParticlesComponent />
       <div className="flex justify-center items-center h-screen min-h-screen">
-        {/* <Circles color="#ffffff" size={100} /> */}
       <div className="grid grid-cols-2 gap-4 gap-x-[100px] p-20">
         <div className="flex flex-col justify-center items-start space-y-4 w-[400px]">
           <motion.div
