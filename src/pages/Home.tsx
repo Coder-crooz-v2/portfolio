@@ -104,7 +104,7 @@ const Home: React.FC = () => {
           <div className="mt-20 grid grid-cols-4 grid-rows-2">
               {
                 skills.map((skill) => (
-                  <Skills skill={skill}/>
+                  <Skills skill={skill} key={skill.name}/>
                 ))
               }
           </div>
