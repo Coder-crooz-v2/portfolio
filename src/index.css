@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+  #particle canvas {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  :root {
+    --color-primary: rgb(132, 132, 255);
+    --color-background: rgb(5, 5, 5);
+  }
+
+  .color-primary {
+    color: var(--color-primary);
+  }
+
+  @property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  .animate-rainbow::after, .animate-rainbow::before {
+    content: '';
+    height: 102%;
+    width: 102%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: conic-gradient(
+      from var(--angle),
+      red, 
+      orange, 
+      yellow, 
+      green, 
+      blue, 
+      indigo, 
+      violet, 
+      red
+    );
+    opacity: 0.5;
+    border-radius: 0.5rem;
+    z-index: -1;
+    animation: 3s linear infinite rotate;
+  }
+  .animate-rainbow::before {
+    filter: blur(0.7rem);
+  }
+
+  @keyframes rotate {
+    0% {
+      --angle: 360deg;
+    }
+    100% {
+      --angle: 0deg;
+    }
+  }
+
+  .html-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
