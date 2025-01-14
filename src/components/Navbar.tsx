@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { toggleTheme } from '../redux/slices/themeSlice';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaMoon } from 'react-icons/fa';
+import logo from '../assets/personal/sounak-logo.png';
 
 const Navbar: React.FC = () => {
   const dispatch = useDispatch();
@@ -21,8 +22,11 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav className="fixed m-4 top-0 left-0 right-0 px-32 p-4 text-white flex justify-between z-50 bg-gray-800 bg-opacity-50 backdrop-blur-md">
-        <div className='font-serif text-xl'>Sounak</div>
+      <nav className="fixed m-4 top-0 left-0 right-0 md:px-32 p-4 text-white flex justify-between z-50 bg-gray-800 bg-opacity-50 backdrop-blur-sm">
+        <div className='flex items-center gap-3'>
+          <img className='h-7' src={logo} alt="S" />
+          <div className='font-serif text-xl'>Sounak</div>
+        </div>
         <div className="hidden md:flex md:gap-5 text-gray-400 space-x-4 md:justify-center md:items-center">
           <Link to="/" className='hover:text-[var(--color-primary)]'>Home</Link>
           <Link to="/codingstats" className='hover:text-[var(--color-primary)]'>Coding Stats</Link>
@@ -47,9 +51,7 @@ const Navbar: React.FC = () => {
           >
             <Link to="/" className='hover:text-blue-500'>Home</Link>
             <Link to="/codingstats" className='hover:text-blue-500'>Coding Stats</Link>
-            <Link to="/projects" className='hover:text-blue-500'>Projects</Link>
-            <Link to="/contact" className='hover:text-blue-500'>Contact me</Link>
-            <button onClick={() => dispatch(toggleTheme())}>Toggle Theme</button>
+            <button onClick={() => dispatch(toggleTheme())}><FaMoon/></button>
           </motion.div>
         )}
       </AnimatePresence>

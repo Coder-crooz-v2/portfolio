@@ -1,11 +1,11 @@
-import react from "../assets/react.png";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import javascript from "../assets/javascript.png";
-import git from "../assets/git.png";
-import express from "../assets/express.png";
-import node from "../assets/node.png";
-import mongodb from "../assets/mongodb.png";
+import react from "../assets/skills/react.png";
+import html from "../assets/skills/html.png";
+import css from "../assets/skills/css.png";
+import javascript from "../assets/skills/javascript.png";
+import git from "../assets/skills/git.png";
+import express from "../assets/skills/express.png";
+import node from "../assets/skills/node.png";
+import mongodb from "../assets/skills/mongodb.png";
 
 export const skills = [
     {

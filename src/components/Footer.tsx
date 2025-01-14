@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -7,21 +8,18 @@ const Footer: React.FC = () => {
       <div className="mb-4">
         <p className="text-lg">Follow me on social media</p>
         <div className="flex justify-center space-x-4 mt-2">
-          <a href="https://github.com/Coder-crooz-v2" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
+          <Link to="https://github.com/Coder-crooz-v2" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
             <FaGithub size={24} />
-          </a>
-          <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
+          </Link>
+          <Link to="https://linkedin.com/in/sounak-bhawal" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
             <FaLinkedin size={24} />
-          </a>
-          <a href="https://twitter.com/your-username" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
-            <FaTwitter size={24} />
-          </a>
-          <a href="https://facebook.com/your-username" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
+          </Link>
+          <Link to="https://www.facebook.com/share/1BiPPZZ2Gx/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
             <FaFacebook size={24} />
-          </a>
-          <a href="https://instagram.com/your-username" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
+          </Link>
+          <Link to="https://www.instagram.com/sounakbhawal?igsh=eGVrNWpxa2hmMGZt" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">
             <FaInstagram size={24} />
-          </a>
+          </Link>
         </div>
       </div>
       <div className="mb-4">

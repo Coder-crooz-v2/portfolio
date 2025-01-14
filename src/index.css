@@ -11,7 +11,9 @@
 
   :root {
     --color-primary: rgb(132, 132, 255);
-    --color-background: rgb(5, 5, 5);
+    --color-background: rgb(10, 10, 10);
+    --color-timeline-backgorund: rgb(20, 20, 20);
+    --color-gray: rgb(200, 200, 200);
   }
 
   .color-primary {
