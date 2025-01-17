@@ -27,7 +27,7 @@ const ProjectCards: React.FC = () => {
             className="Tilt relative animate-rainbow w-full"
             options={defaultOptions}
           >
-            <div className="Tilt-inner w-full h-full bg-gray-800 text-white p-4 relative rounded-lg overflow-hidden">
+            <div className="Tilt-inner w-full h-full bg-gray-800 text-white p-4 rounded-lg overflow-hidden">
               <img src={project.imageUrl} alt={project.title} className="w-full h-40 object-cover rounded-lg" />
               <h3 className="text-xl font-semibold mt-4">{project.title}</h3>
               <p className="mt-2">{project.description}</p>

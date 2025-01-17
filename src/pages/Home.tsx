@@ -9,6 +9,7 @@ import AchievementsSection from '../sections/AchievementsSection';
 import WelcomeSection from '../sections/WelcomeSection';
 import EducationSection from '../sections/EducationSection';
 import Starfield from 'react-starfield';
+import ContactMe from '../sections/ContactMe';
 
 const Home: React.FC = () => {
   return (
@@ -18,7 +19,7 @@ const Home: React.FC = () => {
       <div className="flex justify-center items-center h-screen min-h-screen">
       <WelcomeSection/>
       </div>
-      <div className="bg-[var(--color-background)] text-gray-300 min-h-screen p-8">
+      <div className="bg-[var(--color-background)] text-gray-300 z-[-1] min-h-screen p-8">
       <Starfield
         starCount={1000}
         starColor={[255, 255, 255]}
@@ -32,6 +33,8 @@ const Home: React.FC = () => {
           <SkillsSection/>
 
         <AchievementsSection/>
+
+        <ContactMe/>
       </div>
       <Footer/>
     </>
