@@ -3,7 +3,6 @@ import { Html, OrbitControls, Preload, useProgress } from '@react-three/drei';
 import { Canvas, useLoader } from '@react-three/fiber';
 import React, { Suspense, useEffect, useState } from 'react';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { div } from 'three/src/nodes/TSL.js';
 
 function Loader() {
     const { progress } = useProgress()
