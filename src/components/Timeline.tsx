@@ -7,7 +7,7 @@ const Timeline = () => {
     <VerticalTimeline lineColor='var(--color-primary)'>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
-    contentStyle={{ background: 'var(--color-timeline-backgorund)', color: 'var(--color-gray)' }}
+    contentStyle={{ background: 'var(--color-timeline-background)', color: 'var(--color-gray)' }}
     contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
     date="4th January, 2025"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
@@ -21,7 +21,7 @@ const Timeline = () => {
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
-    contentStyle={{ background: 'var(--color-timeline-backgorund)', color: 'var(--color-gray)' }}
+    contentStyle={{ background: 'var(--color-timeline-background)', color: 'var(--color-gray)' }}
     date="18th December 2024"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={<FaStar />}
@@ -34,7 +34,7 @@ const Timeline = () => {
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
-    contentStyle={{ background: 'var(--color-timeline-backgorund)', color: 'var(--color-gray)' }}
+    contentStyle={{ background: 'var(--color-timeline-background)', color: 'var(--color-gray)' }}
     date="26th October, 2024"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={<FaStar />}
@@ -47,7 +47,7 @@ const Timeline = () => {
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
-    contentStyle={{ background: 'var(--color-timeline-backgorund)', color: 'var(--color-gray)' }}
+    contentStyle={{ background: 'var(--color-timeline-background)', color: 'var(--color-gray)' }}
     date="31st August, 2024"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={<IoIosPodium />}
@@ -60,7 +60,7 @@ const Timeline = () => {
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
-    contentStyle={{ background: 'var(--color-timeline-backgorund)', color: 'var(--color-gray)' }}
+    contentStyle={{ background: 'var(--color-timeline-background)', color: 'var(--color-gray)' }}
     date="September 2022"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={<FaMedal/>}
@@ -73,7 +73,7 @@ const Timeline = () => {
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
-    contentStyle={{ background: 'var(--color-timeline-backgorund)', color: 'var(--color-gray)' }}
+    contentStyle={{ background: 'var(--color-timeline-background)', color: 'var(--color-gray)' }}
     date="July 2022"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={<FaMedal />}

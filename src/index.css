@@ -12,8 +12,9 @@
   :root {
     --color-primary: rgb(132, 132, 255);
     --color-background: rgb(10, 10, 10);
-    --color-timeline-backgorund: rgb(20, 20, 20);
+    --color-timeline-background: rgb(20, 20, 20);
     --color-gray: rgb(200, 200, 200);
+    --color-card-background: #111;
   }
 
   .color-primary {
@@ -80,4 +81,20 @@
       var(--color-primary)
     );
     animation: rotate 3s linear infinite;
+  }
+  
+  .color-empty {
+    fill: #ebedf0;
+  }
+  .color-scale-1 {
+    fill: #c6e48b;
+  }
+  .color-scale-2 {
+    fill: #7bc96f;
+  }
+  .color-scale-3 {
+    fill: #239a3b;
+  }
+  .color-scale-4 {
+    fill: #196127;
   }

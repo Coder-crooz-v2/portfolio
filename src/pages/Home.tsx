@@ -1,6 +1,5 @@
 // filepath: src/pages/Home.tsx
 import React from 'react';
-import Navbar from '../components/Navbar';
 import ParticlesComponent from '../components/ParticlesComponent';
 import Footer from '../components/Footer';
 import ProjectSection from '../sections/ProjectSection';
@@ -14,7 +13,6 @@ import ContactMe from '../sections/ContactMe';
 const Home: React.FC = () => {
   return (
     <>
-      <Navbar />
       <ParticlesComponent />
       <div className="flex justify-center items-center h-screen min-h-screen">
       <WelcomeSection/>

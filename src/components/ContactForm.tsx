@@ -19,7 +19,7 @@ const ContactForm: React.FC = () => {
 
     return (
         <div className="animate-form-border w-full md:w-2/5 rounded-lg p-1 mx-6">
-            <form className="p-7 rounded-lg bg-[var(--color-timeline-backgorund)] h-full" onSubmit={handleSubmit}>
+            <form className="p-7 rounded-lg bg-[var(--color-timeline-background)] h-full" onSubmit={handleSubmit}>
                 <div className="flex-col gap-4">
                     <div className="flex flex-col gap-2 mb-4">
                         <label htmlFor="name" className="text-gray-300">Name</label>
