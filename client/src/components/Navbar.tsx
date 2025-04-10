@@ -20,7 +20,8 @@ const dispatch = useDispatch();
   };
 
   return (
-    <nav className="m-6 px-24 text-gray-400 fixed top-0 left-0 right-0 bg-gray-800 bg-opacity-50 backdrop-blur-md p-4 flex justify-between items-center z-50">
+    <nav className="m-6 text-gray-400 fixed top-0 left-0 right-0 bg-gray-800 bg-opacity-50 z-50">
+      <div className="px-24 py-4 flex justify-between backdrop-blur-md items-center">
       <div className="text-xl font-bold">Sounak</div>
       <div className="hidden md:flex space-x-10 text-lg">
         <Link to="/" className="hover:text-blue-500">Home</Link>
@@ -37,19 +38,32 @@ const dispatch = useDispatch();
           </svg>
         </button>
       </div>
+      </div>
       {isOpen && (
         <motion.div
           initial={{ height: 0 }}
-          animate={{ height: 100 }}
-          transition={{ duration: 0.3 }}
-          className="md:hidden absolute top-16 left-0 right-0 bg-gray-800 bg-opacity-50 backdrop-blur-m p-4 z-40"
+          animate={{ height: 260 }}
+          transition={{ duration: 0.5 }}
+          className="md:hidden absolute top-16 left-0 right-0 bg-gray-800 backdrop-blur-md bg-opacity-50 p-4"
         >
           <div className="flex flex-col space-y-4">
             <motion.div variants={menuVariants} initial="hidden" animate="visible" transition={{ duration: 0.3 }}>
               <Link to="/" className="hover:text-blue-500" onClick={handleToggleMenu}>Home</Link>
             </motion.div>
+            <motion.div variants={menuVariants} initial="hidden" animate="visible" transition={{ duration: 0.3, delay: 0.1 }}>
+              <a href="#education" className="hover:text-blue-500" onClick={handleToggleMenu}>Education</a>
+            </motion.div>
             <motion.div variants={menuVariants} initial="hidden" animate="visible" transition={{ duration: 0.3, delay: 0.2 }}>
-              <Link to="#" className="hover:text-blue-500" onClick={handleToggleMenu}>Coding Stats</Link>
+              <a href="#projects" className="hover:text-blue-500" onClick={handleToggleMenu}>Projects</a>
+            </motion.div>
+            <motion.div variants={menuVariants} initial="hidden" animate="visible" transition={{ duration: 0.3, delay: 0.3 }}>
+              <a href="#skills" className="hover:text-blue-500" onClick={handleToggleMenu}>Skills</a>
+            </motion.div>
+            <motion.div variants={menuVariants} initial="hidden" animate="visible" transition={{ duration: 0.3, delay: 0.4 }}>
+              <a href="#achievements" className="hover:text-blue-500" onClick={handleToggleMenu}>Achievements</a>
+            </motion.div>
+            <motion.div variants={menuVariants} initial="hidden" animate="visible" transition={{ duration: 0.3, delay: 0.5 }}>
+              <a href="#contact" className="hover:text-blue-500" onClick={handleToggleMenu}>Contact</a>
             </motion.div>
           </div>
         </motion.div>
