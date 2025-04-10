@@ -10,7 +10,7 @@ const Achievements = () => {
         threshold: 0.5
     });
     return (
-        <section>
+        <section id="achievements">
             <motion.div
             ref={ref}
             initial={{ opacity: 0, y: 50 }}
@@ -25,6 +25,21 @@ const Achievements = () => {
             </div>
         </motion.div>
         <VerticalTimeline lineColor='rgb(142, 142, 253)' className='mt-14'>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: 'rgb(30, 30, 30)'}}
+                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                date="February, 2025"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                iconClassName='border-2 border-white'
+                icon={<FaUser />}
+            >
+                <h3 className="vertical-timeline-element-title">CTRL+ALT+HACK</h3>
+                <h4 className="vertical-timeline-element-subtitle">NSUT, New Delhi</h4>
+                <p>
+                    Qualified for the finals and was among the top 17 teams from 1200+ teams of the CTRL+ALT+HACK hackathon organised by Netaji Subhas University of Technology, New Delhi.
+                </p>
+            </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 contentStyle={{ background: 'rgb(30, 30, 30)'}}
@@ -84,7 +99,7 @@ const Achievements = () => {
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                date="August 31, 2024"
+                date="September, 2022"
                 iconClassName='border-2 border-white'
                 contentStyle={{ background: 'rgb(30, 30, 30)' }}
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}

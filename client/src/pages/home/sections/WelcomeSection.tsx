@@ -4,6 +4,8 @@ import Typewriter from 'typewriter-effect'; // Adjust the path to your photo
 import { Link } from 'react-router-dom';
 import portrait from '/self/self.jpg';
 
+const resumeUrl = "https://drive.google.com/file/d/1i5tGM0jH2iKRJbPJkduxgX8P7Y3_8BN3/view?usp=drive_link"
+
 const WelcomeSection: React.FC = () => {
   return (
     <div className="flex mt-20 md:mt-0 gap-10 md:gap-28 flex-col md:flex-row items-center justify-center h-screen text-center md:text-left">
@@ -32,7 +34,7 @@ const WelcomeSection: React.FC = () => {
         />
       </div>
         <p className='text-3xl'>Full stack developer</p>
-        <Link to="https://drive.google.com/file/d/1aNIxWpn79-XW5HWNwZCARDjokNgDhR6x/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <Link to={resumeUrl} target="_blank" rel="noopener noreferrer">
           <button className="bg-transparent border text-white px-6 py-2 text-lg mt-4 hover:bg-white hover:text-black transition duration-300">
             View My Resume
           </button>

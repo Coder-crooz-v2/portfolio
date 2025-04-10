@@ -24,7 +24,11 @@ const dispatch = useDispatch();
       <div className="text-xl font-bold">Sounak</div>
       <div className="hidden md:flex space-x-10 text-lg">
         <Link to="/" className="hover:text-blue-500">Home</Link>
-        <Link to="/codingstats" className="hover:text-blue-500">Coding Stats</Link>
+        <a href="#education" className="hover:text-blue-500">Education</a>
+        <a href="#projects" className="hover:text-blue-500">Projects</a>
+        <a href="#skills" className="hover:text-blue-500">Skills</a>
+        <a href="#achievements" className="hover:text-blue-500">Achievements</a>
+        <a href="#contact" className="hover:text-blue-500">Contact</a>
       </div>
       <div className="md:hidden flex items-center">
         <button onClick={handleToggleMenu} className="focus:outline-none">

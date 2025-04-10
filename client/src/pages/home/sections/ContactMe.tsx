@@ -41,6 +41,7 @@ const ContactMe: React.FC = () => {
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
             transition={{ duration: 0.5 }}
             className="p-4 md:p-8 z-5"
+            id="contact"
         >
             <div className='flex flex-row gap-5 justify-start items-end'>
                 <div className='w-[5px] bg-[var(--color-primary)] h-[64px]' ></div>
